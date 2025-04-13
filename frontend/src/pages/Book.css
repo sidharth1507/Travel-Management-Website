@@ -1,0 +1,176 @@
+.book-container {
+  padding-top: 8rem;
+}
+
+.book-header {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: var(--light-bg);
+  margin-bottom: 4rem;
+}
+
+.book-header h1 {
+  font-size: 4rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.book-header p {
+  font-size: 1.8rem;
+  color: var(--light-black);
+}
+
+.book-form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+
+.book-form-container {
+  flex: 1 1 60rem;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.message {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.message.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--black);
+  margin-bottom: 0.8rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.date-picker {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.date-picker:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.book-btn:hover {
+  background-color: #7d32a8;
+}
+
+.book-btn:disabled {
+  background-color: #b39dbc;
+  cursor: not-allowed;
+}
+
+.book-image {
+  flex: 1 1 30rem;
+  position: relative;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.booking-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 0 0 1rem 1rem;
+  color: white;
+}
+
+.booking-info h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.booking-info ul {
+  list-style: none;
+}
+
+.booking-info li {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.booking-info li i {
+  color: var(--main-color);
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .book-form-section {
+    flex-direction: column;
+  }
+  
+  .book-image {
+    height: 30rem;
+  }
+}

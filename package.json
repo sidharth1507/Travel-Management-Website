@@ -1,0 +1,26 @@
+{
+  "name": "travel-management-website",
+  "version": "1.0.0",
+  "description": "Travel Management Website using React, Node.js, Express, and SQLite",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm install --prefix frontend && npm install --prefix backend"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "express",
+    "sqlite",
+    "travel"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}

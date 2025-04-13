@@ -1,0 +1,193 @@
+.packages-container {
+  padding-top: 8rem;
+}
+
+.packages-header {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: var(--light-bg);
+  margin-bottom: 4rem;
+}
+
+.packages-header h1 {
+  font-size: 4rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.packages-header p {
+  font-size: 1.8rem;
+  color: var(--light-black);
+}
+
+.packages-filter {
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+
+.search-container {
+  display: flex;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.search-container button {
+  padding: 0 2rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #7d32a8;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  gap: 3rem;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+
+.package-card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.package-image {
+  position: relative;
+  height: 25rem;
+}
+
+.package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.package-price {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.package-content {
+  padding: 2rem;
+}
+
+.package-content h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.package-location, .package-duration {
+  font-size: 1.5rem;
+  color: var(--light-black);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.package-location i, .package-duration i {
+  margin-right: 0.8rem;
+  color: var(--main-color);
+}
+
+.package-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.package-rating i {
+  color: #ffc107;
+  margin-right: 0.5rem;
+}
+
+.package-rating span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.package-description {
+  font-size: 1.5rem;
+  color: var(--light-black);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.package-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package-actions .btn {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.loading-container, .error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-size: 2rem;
+  color: var(--light-black);
+}
+
+.error-container {
+  color: #c62828;
+}
+
+@media (max-width: 768px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .package-image {
+    height: 20rem;
+  }
+}

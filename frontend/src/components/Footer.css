@@ -1,0 +1,60 @@
+.footer {
+  background: url('/src/assets/footer-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--light-bg);
+  padding: 3rem 10%;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer .box-container .box a {
+  color: var(--light-black);
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer .box-container .box a i {
+  color: var(--main-color);
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--main-color);
+  transform: translateX(1rem);
+}
+
+.footer .credit {
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 0.1rem solid var(--light-black);
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.footer .credit span {
+  color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 2rem;
+  }
+  
+  .footer .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}

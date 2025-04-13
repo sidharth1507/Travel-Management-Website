@@ -1,0 +1,109 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  box-shadow: var(--box-shadow);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: var(--black);
+  margin-left: 2rem;
+  transition: all 0.3s ease;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+}
+
+.header .navbar .logout-btn {
+  font-size: 1.7rem;
+  color: var(--black);
+  margin-left: 2rem;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header .navbar .logout-btn:hover {
+  color: var(--main-color);
+}
+
+.header .menu-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--black);
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .menu-btn {
+    display: block;
+  }
+
+  .header .navbar {
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.3s ease;
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+    padding: 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  .header .navbar .logout-btn {
+    margin: 1.5rem 0;
+    padding: 0.5rem 0;
+    font-size: 2rem;
+  }
+}

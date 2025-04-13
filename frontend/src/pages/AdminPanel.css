@@ -1,0 +1,248 @@
+.admin-container {
+  padding-top: 8rem;
+}
+
+.admin-header {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: var(--light-bg);
+  margin-bottom: 4rem;
+}
+
+.admin-header h1 {
+  font-size: 4rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.admin-header p {
+  font-size: 1.8rem;
+  color: var(--light-black);
+}
+
+.admin-content {
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+
+.admin-tabs {
+  display: flex;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--light-black);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tab-btn i {
+  font-size: 2rem;
+}
+
+.tab-btn:hover {
+  color: var(--main-color);
+}
+
+.tab-btn.active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.panel-header h2 {
+  font-size: 2.4rem;
+  color: var(--black);
+}
+
+.search-container {
+  display: flex;
+  max-width: 40rem;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.search-container button {
+  padding: 0 1.5rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #7d32a8;
+}
+
+.table-container {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.6rem;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: var(--light-bg);
+  color: var(--black);
+  font-weight: 600;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.role-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.role-badge.admin {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.role-badge.user {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+}
+
+.status-select.confirmed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-color: #a5d6a7;
+}
+
+.status-select.pending {
+  background-color: #fff8e1;
+  color: #f57f17;
+  border-color: #ffe082;
+}
+
+.status-select.cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+  border-color: #ef9a9a;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+.action-btn.edit {
+  color: #1976d2;
+}
+
+.action-btn.view {
+  color: #7cb342;
+}
+
+.action-btn.delete {
+  color: #d32f2f;
+}
+
+.action-btn:hover {
+  opacity: 0.8;
+}
+
+.featured-toggle {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  color: var(--light-black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.featured-toggle.active {
+  background-color: var(--main-color);
+  color: white;
+  border-color: var(--main-color);
+}
+
+.loading-container, .error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-size: 2rem;
+  color: var(--light-black);
+}
+
+.error-container {
+  color: #c62828;
+}
+
+@media (max-width: 768px) {
+  .admin-tabs {
+    flex-direction: column;
+    border-bottom: none;
+  }
+  
+  .tab-btn {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tab-btn.active {
+    border-bottom: 1px solid var(--main-color);
+  }
+  
+  .panel-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
