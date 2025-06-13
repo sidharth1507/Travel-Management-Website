@@ -79,8 +79,3 @@ After starting the development server:
 
 ### Database
 - SQLite
-
-### Development Tools
-- Vite (React build tool)
-- Nodemon (server auto-restart)
-- Concurrently (run multiple commands)
