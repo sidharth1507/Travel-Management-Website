@@ -1,7 +1,5 @@
 # Manzil - Travel Management Website
 
-![Manzil Logo](images/logo.jpeg)
-
 ## Overview
 
 Manzil is a comprehensive travel management platform that helps users plan and book their perfect journey. The application provides an intuitive interface for booking travel arrangements, managing user accounts, and exploring travel packages.
@@ -86,11 +84,3 @@ After starting the development server:
 - Vite (React build tool)
 - Nodemon (server auto-restart)
 - Concurrently (run multiple commands)
-
-## License
-
-ISC
-
----
-
-© 2023 Manzil Travel Management
