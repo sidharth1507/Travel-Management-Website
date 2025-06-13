@@ -26,7 +26,7 @@ Manzil is a comprehensive travel management platform that helps users plan and b
 
 ```bash
 # Clone the repository
-git clone https://github.com/sidharth1507/Manzil-Travel-Management.git
+git clone https://github.com/sidharth1507/Travel-Management-Website.git
 
 # Install all dependencies (backend, frontend, and root)
 npm run install-all
